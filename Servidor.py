@@ -96,11 +96,6 @@ Lector.start()
 
 # Keys twitter
 
-consumer_key = "VJnaWa9yEL22pMtOp2boJTSLG"
-consumer_secret = "NKzLCo8PRh0XhUJxvkYy5tdTT0lHMQvP0QOv9rNXLVT0kgCQgW"
-access_token = "737659353356984320-YKeJZxw7BL1XksD9qY1QrYPQxoZewbx"
-access_secret = "2pKP49kOym4ST8gy8aMu8BsZdFoVuPI8dJP7Grj69UZul"
-
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 
