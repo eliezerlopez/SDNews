@@ -1,0 +1,396 @@
+/* ===== RESETEAR MARGENES Y PADDING ===== */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: white;
+}
+
+/* ========================================================================== */
+/*                            BANNER SUPERIOR                                 */
+/* ========================================================================== */
+
+#Banner {
+  z-index: 2;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: #333;
+}
+
+/* == Titulo == */
+
+#TituloWeb {
+  float: left;
+  width: 12%;
+  padding-top: 13px;
+  padding-left: 170px;
+}
+#TituloWeb a {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+#TituloWeb a:hover {
+  color: #B5B5B5;
+}
+
+/* == Navegador == */
+
+#Navegador {
+  float: right;
+  width: 72.5%;
+  padding-top: 13px;
+}
+
+#Navegador ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+#Navegador li {
+  display: inline;
+  text-align: center;
+  margin: 0 30px 0 0;
+  color: white;
+  padding: 2px 7px 7px 7px;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#Navegador li:hover {
+  cursor: pointer;
+  color: #B5B5B5;
+}
+
+/* ========================================================================== */
+/*                              SOCIAL MEDIA                                  */
+/* ========================================================================== */
+
+#SocialMedia {
+  margin-top: 45px;
+  width: 100%;
+  height: 50px;
+}
+
+#twitter {
+  float:right;
+  margin-top: 2px;
+  margin-right: 10px;
+  height: 40px;
+  width: auto;
+}
+
+#twitter:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+}
+
+#twitter:not(:hover) {
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+}
+
+#facebook {
+  float:right;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 25px;
+  width: auto;
+}
+
+#facebook:hover {
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
+}
+
+#facebook:not(:hover) {
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+}
+
+/* ========================================================================== */
+/*                                CATEGORIAS                                  */
+/* ========================================================================== */
+
+#Noticias {
+  z-index: 1;
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.Categoria {
+  margin-left: 10px;
+  margin-right: 10px;
+  float:left;
+  width: 18%;
+  height: 100%;
+  background: white;
+  text-decoration: none;
+}
+
+#Tecno {
+  margin-left: 0px;
+}
+
+#img_Tecno {
+  margin-top: 20px;
+  margin-left: 13px;
+  width: auto;
+  height: 180px;
+}
+
+#t_T {
+  color: #333;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-left: 38px;
+}
+
+#img_Depor {
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+#t_D {
+  color: #333;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 8px;
+  margin-left: 50px;
+}
+
+#img_Econo {
+  margin-top: 18px;
+  margin-left: 16px;
+  width: auto;
+  height: 190px;
+}
+
+#t_E {
+  color: #333;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 13px;
+  margin-left: 45px;
+}
+
+#img_Poli {
+  margin-top: 25px;
+  margin-left: 15px;
+  width: auto;
+  height: 180px;
+}
+
+#t_P {
+  color: #333;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 18px;
+  margin-left: 65px;
+}
+
+#Cien {
+  margin-right: 0px;
+}
+
+#img_Cien {
+  margin-top: 25px;
+  margin-left: 15px;
+  width: auto;
+  height: 180px;
+}
+
+#t_C {
+  color: #333;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 18px;
+  margin-left: 65px;
+}
+
+.Categoria:hover {
+  box-shadow: 0 0 10px 1px #333;
+  border-radius: 30px;
+  background: #EDEDED;
+  transform:scale(1.05);
+  transition: all .2s ease-in-out;
+  cursor:pointer;
+}
+
+.Categoria:not(:hover) {
+  transform: scale(1);
+  transition: all .2s ease-in-out;
+}
+
+.Categoria:active {
+  cursor: pointer;
+  border-radius: 30px;
+  background: #D5D5D5;
+}
+
+/* ========================================================================== */
+/*                                TITULARES                                   */
+/* ========================================================================== */
+
+.Titulares {
+  margin-top: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.Noti {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.Titular {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: #333;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+}
+
+.Fuente {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-align: right;
+  font-style: italic;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 10px;
+  color: #A1A1A1;
+}
+
+/* ========================================================================== */
+/*                                twitter                                     */
+/* ========================================================================== */
+
+#FondoTwitter {
+  visibility: hidden;
+  z-index: 3;
+  opacity: 0.7;
+  position: fixed;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+#widget {
+  position: fixed;
+  margin-top: 60px;
+  margin-left: 430px;
+  display: none;
+  z-index: 4;
+}
+
+/* ========================================================================== */
+/*                                 FOOTER                                     */
+/* ========================================================================== */
+
+#Footer {
+  margin-top: 90px;
+  width: 100%;
+  height: 200px;
+  background: #333;
+}
+
+#PIE {
+  width: 100%;
+  height: 20%;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+
+#PIE p {
+  margin-left: 500px;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 15px;
+  color: white;
+  padding-top: 10px;
+}
+
+#enlaces {
+  float: left;
+  margin-left: 200px;
+  width: 20%;
+  height: 80%;
+}
+
+#enlaces p {
+  color: white;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 90px;
+  letter-spacing: 2px;
+}
+
+#enlaces a {
+  text-decoration: none;
+  margin-top: 3px;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 13px;
+  color: white;
+  display: block;
+  margin-left: 100px;
+}
+
+#enlaces a:hover {
+  color: #B5B5B5;
+}
+
+#cars {
+  text-decoration: none;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 18px;
+  margin-left: 140px;
+  margin-top: 60px;
+  float: left;
+  color: white;
+}
+
+#cars:hover {
+  color: #B5B5B5;
+}
+
+#siguenos {
+  margin-left: 170px;
+  float: left;
+  width: 20%;
+  height: 80%;
+}
+
+#siguenos p {
+  margin-left: 50px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  color: white;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+#siguenos a {
+  display: block;
+  margin-left: 85px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 13px;
+  color: white;
+}

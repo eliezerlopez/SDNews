@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="static/css/secciones.css"/>
+    <link rel="icon" href="https://i1.imgiz.com/talent/images/331111031431097301logo_sd_company_black.png">
+  </head>
+  <body>
+    <div id="FondoTwitter" onclick="EscondeTwitter()"></div>
+    <div id="widget">
+      <a class="twitter-timeline"  href="https://twitter.com/SD__news" width="500" height="500" data-widget-id="737927536085225473">Tweets por el @SD__news.</a>
+    </div>
+    <div id="Banner">
+      <p id="TituloWeb"><a href="/">SD News</a></p>
+      <div id="Navegador">
+        <ul>
+          <li onclick="window.location = '/tecnologia';">Tecnología</li>
+          <li onclick="window.location = '/deportes';">Deportes</li>
+          <li onclick="window.location = '/economia'">Economía</li>
+          <li onclick="window.location = '/politica'">Política</li>
+          <li onclick="window.location = '/ciencia'">Ciencia</li>
+        </ul>
+      </div>
+    </div>
+    <p id="TituloCategoria">Deportes</p>
+    <div id="Noticias">
+      <div id="Actual">
+        <a id="Prim" class="NOTI" href={{Links[0]}} target="_blank">
+          <img class="IMG" src={{Imagenes[0]}}>
+          <div class="Texto">
+            <p class="TIT">{{Titulares[0]}}</p>
+          </div>
+          <p class="FUE">{{Fuentes[0]}}</p>
+        </a>
+        <a id="Seco" class="NOTI" href={{Links[1]}} target="_blank">
+          <img class="IMG" src={{Imagenes[1]}}>
+          <div class="Texto">
+            <p class="TIT">{{Titulares[1]}}</p>
+          </div>
+          <p class="FUE">{{Fuentes[1]}}</p>
+        </a>
+      </div>
+      <div id="Anteriores">
+        {% for i in range(2, N) %}
+        <a href={{Links[i]}} target="_blank" class="Noticia">
+          <img class="IMG" src={{Imagenes[i]}}>
+          <div class="Texto">
+            <p class="TIT_noti">{{Titulares[i]}}</p>
+          </div>
+          <p class="FUE" id="FUE_noti">{{Fuentes[i]}}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div id="Footer">
+      <div id="PIE">
+        <p>SD NEWS: Tu portal de noticias de actualidad :D</p>
+      </div>
+      <div id="enlaces">
+        <p>Enlaces</p>
+        <a href="/">Inicio</a>
+        <a href="/tecnologia">Tecnología</a>
+        <a href="/deportes">Deportes</a>
+        <a href="/economia">Economía</a>
+        <a href="/politica">Política</a>
+        <a href="/ciencia">Ciencia</a>
+      </div>
+      <a id="cars" href="/estadisticas">Estadisticas</a>
+      <div id="siguenos">
+        <p>Siguenos en</p>
+        <a href="https://twitter.com/SD__news" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/sdnewss/" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </body>
+</html>

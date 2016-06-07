@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="static/css/estadisticas.css"/>
+    <link rel="icon" href="https://i1.imgiz.com/talent/images/331111031431097301logo_sd_company_black.png">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Tecnología', {{TECNO}}],
+          ['Deportes', {{DEPOR}}],
+          ['Economía', {{ECONO}}],
+          ['Política', {{POLI}}],
+          ['Ciencia', {{CIEN}}]
+        ]);
+        var options = {'title':'Secciones más visitadas',
+                       'width':800,
+                       'height':450};
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="Banner">
+      <p id="TituloWeb"><a href="/">SD News</a></p>
+      <div id="Navegador">
+        <ul>
+          <li onclick="window.location = '/tecnologia';">Tecnología</li>
+          <li onclick="window.location = '/deportes';">Deportes</li>
+          <li onclick="window.location = '/economia'">Economía</li>
+          <li onclick="window.location = '/politica'">Política</li>
+          <li onclick="window.location = '/ciencia'">Ciencia</li>
+        </ul>
+      </div>
+    </div>
+    <p id="TituloCategoria">Gráfico</p>
+    <div id="chart_div"></div>
+    <div id="Footer">
+      <div id="PIE">
+        <p>SD NEWS: Tu portal de noticias de actualidad :D</p>
+      </div>
+      <div id="enlaces">
+        <p>Enlaces</p>
+        <a href="/">Inicio</a>
+        <a href="/tecnologia">Tecnología</a>
+        <a href="/deportes">Deportes</a>
+        <a href="/economia">Economía</a>
+        <a href="/politica">Política</a>
+        <a href="/ciencia">Ciencia</a>
+      </div>
+      <a id="cars" href="/estadisticas">Estadisticas</a>
+      <div id="siguenos">
+        <p>Siguenos en</p>
+        <a href="https://twitter.com/SD__news" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/sdnewss/" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </body>
+</html>
